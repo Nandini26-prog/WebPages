@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <!-- Integrate Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-blue-100">
+    <div class="container mx-auto mt-8">
+        <h2 class="text-2xl font-semibold mb-4 px-5">User Registration Form</h2>
+        <form id="registrationForm" class="max-w-md mx-auto bg-white p-5 rounded-md shadow-md" action = "/api/register" method="post">
+            <div class="mb-4">
+                <label for="firstName" class="block text-sm font-medium text-gray-700">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required
+                    class="mt-1 p-2 w-full border-gray-300 bg-gray-50 rounded-md">
+                <div id="firstNameError" class="text-red-500 text-xs hidden">First name is required</div>
+            </div>
+            <div class="mb-4">
+                <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required
+                    class="mt-1 p-2 w-full border-gray-300 bg-gray-50 rounded-md">
+                <div id="lastNameError" class="text-red-500 text-xs hidden">Last name is required</div>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address:</label>
+                <input type="email" id="email" name="email" required
+                    class="mt-1 p-2 w-full border-gray-300 bg-gray-50 rounded-md">
+                <div id="emailError" class="text-red-500 text-xs hidden">Email is required</div>
+            </div>
+            <div class="mb-4">
+                <label for="mobileNumber" class="block text-sm font-medium text-gray-700">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required
+                    class="mt-1 p-2 w-full border-gray-300 bg-gray-50 rounded-md">
+                <div id="mobileNumberError" class="text-red-500 text-xs hidden">Mobile number is required</div>
+            </div>
+            <div class="mb-4">
+                <label for="gender" class="block text-sm font-medium text-gray-700">Gender:</label>
+                <select id="gender" name="gender" required
+                    class="mt-1 p-2 w-full border-gray-300 bg-gray-50 rounded-md">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <div id="genderError" class="text-red-500 text-xs hidden">Gender is required</div>
+            </div>
+            <div class="mb-4">
+                <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required
+                    class="mt-1 p-2 w-full border-gray-300 bg-gray-50 rounded-md">
+                <div id="dobError" class="text-red-500 text-xs hidden">Date of birth is required</div>
+            </div>
+            <div class="mb-4">
+                <label for="about" class="block text-sm font-medium text-gray-700">About:</label>
+                <textarea id="about" name="about"
+                    class="mt-1 p-2 w-full border-gray-300 bg-gray-50 rounded-md"></textarea>
+            </div>
+            <button type="submit"
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md">
+                Submit
+            </button>
+        </form>
+        <h2>Submitted User Data:</h2>
+    <div id="submittedData">
+      <p><b>First Name:</b> <span id="firstNameDisplay"></span></p>
+      <p><b>Last Name:</b> <span id="lastNameDisplay"></span></p>
+      <p><b>Email:</b> <span id="emailDisplay"></span></p>
+      <p><b>Mobile Number:</b> <span id="mobileNumberDisplay"></span></p>
+      <p><b>Gender:</b> <span id="genderDisplay"></span></p>
+      <p><b>Date of Birth:</b> <span id="dobDisplay"></span></p>
+      <p><b>About:</b> <span id="aboutDisplay"></span></p>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Validation
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var email = document.getElementById('email').value;
+            var mobileNumber = document.getElementById('mobileNumber').value;
+            var gender = document.getElementById('gender').value;
+            var dob = document.getElementById('dob').value;
+            var isValid = true;
+
+            // Check if any field is empty
+            if (!firstName.trim()) {
+                document.getElementById('firstNameError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('firstNameError').classList.add('hidden');
+            }
+            if (!lastName.trim()) {
+                document.getElementById('lastNameError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('lastNameError').classList.add('hidden');
+            }
+            if (!email.trim()) {
+                document.getElementById('emailError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('emailError').classList.add('hidden');
+            }
+            if (!mobileNumber.trim()) {
+                document.getElementById('mobileNumberError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('mobileNumberError').classList.add('hidden');
+            }
+            if (!gender.trim()) {
+                document.getElementById('genderError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('genderError').classList.add('hidden');
+            }
+            if (!dob.trim()) {
+                document.getElementById('dobError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('dobError').classList.add('hidden');
+            }
+
+            // If all fields are valid, submit the form
+            if (isValid) {
+              // Collect form data
+              const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                mobile: document.getElementById('mobileNumber').value,
+                gender: document.getElementById('gender').value,
+                dob: document.getElementById('dob').value,
+                about: document.getElementById('about').value
+              };
+          
+              fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+              })
+              .then(response => {
+                if (!response.ok) {
+                  throw new Error('Network response was not ok');
+                }
+                return response.json();
+              })
+              .then(data => {
+                console.log('Server response:', data);
+                // Update the displayed data
+                document.getElementById('firstNameDisplay').innerText = formData.firstName;
+                document.getElementById('lastNameDisplay').innerText = formData.lastName;
+                document.getElementById('emailDisplay').innerText = formData.email;
+                document.getElementById('mobileNumberDisplay').innerText = formData.mobile;
+                document.getElementById('genderDisplay').innerText = formData.gender;
+                document.getElementById('dobDisplay').innerText = formData.dob;
+                document.getElementById('aboutDisplay').innerText = formData.about;
+          
+                // Clear the form (optional)
+                document.getElementById('registrationForm').reset();
+              })
+              .catch(error => {
+                console.error('There was a problem with your fetch operation:', error);
+              });
+            }
+          });
+        </script>
+      </body>
+      </html>
