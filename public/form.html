@@ -80,7 +80,7 @@
     <script>
         document.getElementById('registrationForm').addEventListener('submit', function (event) {
             event.preventDefault();
-            // Validation
+           
             var firstName = document.getElementById('firstName').value;
             var lastName = document.getElementById('lastName').value;
             var email = document.getElementById('email').value;
@@ -88,8 +88,7 @@
             var gender = document.getElementById('gender').value;
             var dob = document.getElementById('dob').value;
             var isValid = true;
-
-            // Check if any field is empty
+   // Checking empty fields
             if (!firstName.trim()) {
                 document.getElementById('firstNameError').classList.remove('hidden');
                 isValid = false;
@@ -127,9 +126,9 @@
                 document.getElementById('dobError').classList.add('hidden');
             }
 
-            // If all fields are valid, submit the form
+        //yes,valid
             if (isValid) {
-              // Collect form data
+              
               const formData = {
                 firstName: document.getElementById('firstName').value,
                 lastName: document.getElementById('lastName').value,
@@ -155,7 +154,7 @@
               })
               .then(data => {
                 console.log('Server response:', data);
-                // Update the displayed data
+    
                 document.getElementById('firstNameDisplay').innerText = formData.firstName;
                 document.getElementById('lastNameDisplay').innerText = formData.lastName;
                 document.getElementById('emailDisplay').innerText = formData.email;
@@ -164,7 +163,7 @@
                 document.getElementById('dobDisplay').innerText = formData.dob;
                 document.getElementById('aboutDisplay').innerText = formData.about;
           
-                // Clear the form (optional)
+                // Clearing the form 
                 document.getElementById('registrationForm').reset();
               })
               .catch(error => {
