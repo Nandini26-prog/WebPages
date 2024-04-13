@@ -4,7 +4,7 @@ Frontend features:
     source folder: public (since html is a static language)
     minimal background,
     attributes: First Name, Last Name, email, Mobile, Date of birth, About(optional field).
-    ![image](https://github.com/Nandini26-prog/user_form_registration/assets/113116163/bbb4d058-bd64-4aa9-b900-0f11c8f235df)
+   
 
 
 Backend features:
