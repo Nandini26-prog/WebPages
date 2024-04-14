@@ -1,13 +1,11 @@
 # user_form_registration
-Frontend features:
+~Frontend features:
 
     source folder: public (since html is a static language)
     minimal background,
     attributes: First Name, Last Name, email, Mobile, Date of birth, About(optional field).
    
-
-
-Backend features:
+~Backend features:
 
     filename: server.js
     using express framework
@@ -19,3 +17,4 @@ Backend features:
     2.node and express must be installed in your system
     3. Make sure the Localhost port number is not occupied. 
     4. Open server.js file in any terminal like VScode and then run command  'node server.js'
+    5.All the user data will be displayed on the backend terminal and the last input user data will be displayed on the screen below in the form as well.
