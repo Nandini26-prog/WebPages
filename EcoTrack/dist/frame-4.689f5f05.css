@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  --font-lato: Lato;
+  --font-size-mini: 15px;
+  --font-size-13xl: 32px;
+  --font-size-base: 16px;
+  --font-size-15xl: 34px;
+  --font-size-xl: 20px;
+  --font-size-smi: 13px;
+  --font-size-5xl: 24px;
+  --font-size-21xl: 40px;
+  --font-size-45xl: 64px;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-saddlebrown-100: #644129;
+  --color-saddlebrown-200: #64412980;
+  --color-gainsboro: #d9d9d9;
+  --color-beige: #faf9deb3;
+  --br-smi: 13px;
+  --br-sm: 14px;
+}
+/*# sourceMappingURL=frame-4.689f5f05.css.map */

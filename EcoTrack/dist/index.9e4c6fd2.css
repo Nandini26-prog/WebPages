@@ -1,0 +1,395 @@
+.image-1-icon {
+  object-fit: cover;
+  width: 1455px;
+  height: 1391px;
+  position: absolute;
+  top: -313px;
+  left: 0;
+}
+
+.abouthelp-item {
+  filter: blur(55.8px);
+  background-color: var(--color-saddlebrown-200);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 783px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.buy-now-at-container1, .contact1, .help1 {
+  width: 205px;
+  height: 118px;
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 255px;
+}
+
+.buy-now-at-container1, .contact1 {
+  width: 523px;
+  height: 100px;
+  left: 481px;
+}
+
+.contact1 {
+  width: 244px;
+  height: 118px;
+  left: 32px;
+}
+
+.abouthelp1 {
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  width: 1004px;
+  height: 150px;
+  position: absolute;
+  top: 874px;
+  left: 0;
+}
+
+.push-your-limits1 {
+  font-size: var(--font-size-45xl);
+  width: 626px;
+  height: 174px;
+  display: inline-block;
+  position: absolute;
+  top: 64px;
+  left: 199px;
+}
+
+.designed-to-create1 {
+  width: 733px;
+  height: 127px;
+  font-weight: 500;
+  display: inline-block;
+  position: absolute;
+  top: 151px;
+  left: 459px;
+}
+
+.eco-friendly2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.green-fitness-monitoring1 {
+  font-size: var(--font-size-13xl);
+  margin: 0;
+}
+
+.active-community-join-container1, .eco-friendly-green-container1 {
+  font-size: var(--font-size-15xl);
+  width: 326px;
+  height: 263px;
+  display: inline-block;
+  position: absolute;
+  top: 329px;
+  left: 134px;
+}
+
+.active-community-join-container1 {
+  width: 357px;
+  top: 326px;
+  left: 523px;
+}
+
+.smarter-training1 {
+  font-size: var(--font-size-15xl);
+  margin: 0;
+  font-weight: 600;
+}
+
+.track-your-workouts {
+  margin: 0;
+}
+
+.smarter-training-track-container1 {
+  width: 326px;
+  height: 263px;
+  display: inline-block;
+  position: absolute;
+  top: 329px;
+  left: 956px;
+}
+
+.desktop-3-child1, .desktop-3-inner, .line-div {
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 283px;
+  height: 1px;
+  position: absolute;
+  top: 381.5px;
+  left: 111.5px;
+}
+
+.desktop-3-child1, .line-div {
+  width: 352px;
+  top: 382.5px;
+  left: 511.5px;
+}
+
+.desktop-3-child1 {
+  width: 324.1px;
+  left: 955.5px;
+}
+
+.desktop-31 {
+  background-color: var(--color-white);
+  cursor: pointer;
+  color: var(--color-black);
+  width: 1440px;
+  height: 1078px;
+  position: absolute;
+  top: calc(50% + 485px);
+  left: calc(50% - 720px);
+  overflow: hidden;
+}
+
+.ecotrack1 {
+  width: 554px;
+  height: 131px;
+  font-weight: 800;
+  display: inline-block;
+  position: absolute;
+  bottom: 115px;
+  left: calc(50% - 189px);
+}
+
+.frame6, .let-your-routine1 {
+  width: 786px;
+  position: absolute;
+}
+
+.let-your-routine1 {
+  font-size: var(--font-size-21xl);
+  text-align: center;
+  height: 115px;
+  display: inline-block;
+  top: calc(50% + 8px);
+  left: calc(50% - 393px);
+}
+
+.frame6 {
+  height: 246px;
+  top: 284px;
+  left: 362px;
+  overflow: hidden;
+}
+
+.frame-item {
+  border-radius: var(--br-sm);
+  background-color: var(--color-beige);
+  width: 418px;
+  height: 83px;
+  position: absolute;
+  top: 0;
+  left: 19px;
+}
+
+.sign-up1 {
+  width: 455px;
+  height: 83px;
+  font-weight: 500;
+  display: inline-block;
+  top: 14px;
+  left: 0;
+}
+
+.frame5, .frame7, .sign-up1 {
+  position: absolute;
+}
+
+.frame7 {
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  width: 455px;
+  height: 97px;
+  top: 571px;
+  left: 510px;
+  overflow: hidden;
+}
+
+.frame5 {
+  background-image: url("frame@3x.d9d2a7e1.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1440px;
+  height: 1024px;
+  top: 0;
+  left: 0;
+}
+
+.buy-now, .login1 {
+  flex-shrink: 0;
+  width: 251px;
+  height: 54px;
+  display: inline-block;
+  position: relative;
+}
+
+.login1 {
+  width: 297px;
+}
+
+.nav-inner {
+  background-color: var(--color-gainsboro);
+  border-radius: 50%;
+  width: 71px;
+  height: 62px;
+  position: relative;
+}
+
+.nav-child1 {
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1463px;
+  height: 2px;
+  position: relative;
+}
+
+.nav1 {
+  font-size: var(--font-size-13xl);
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px 61px;
+  width: 1461px;
+  display: flex;
+  position: absolute;
+  top: 18px;
+  left: 0;
+}
+
+.desktop-11 {
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 1024px;
+  font-size: 85px;
+  position: absolute;
+  top: calc(50% - 1563px);
+  left: calc(50% - 720px);
+}
+
+.frame-inner {
+  border-radius: var(--br-smi);
+  background-color: var(--color-saddlebrown-100);
+  width: 384px;
+  height: 93px;
+  position: absolute;
+  top: 594px;
+  left: 190px;
+}
+
+.daniel-korpai-6hkxwrsbl-8-unsp-icon1 {
+  object-fit: contain;
+  width: 461.2px;
+  height: 684.9px;
+  position: absolute;
+  top: 187px;
+  left: 0;
+}
+
+.frame9 {
+  width: 328px;
+  height: 814px;
+  position: absolute;
+  top: 0;
+  left: 614px;
+  overflow: hidden;
+}
+
+.learn-more, .set-up-a-container1 {
+  display: inline-block;
+  position: absolute;
+}
+
+.learn-more {
+  cursor: pointer;
+  width: 381px;
+  height: 54px;
+  top: 614px;
+  left: 190px;
+}
+
+.set-up-a-container1 {
+  width: 928px;
+  height: 308px;
+  font-weight: 800;
+  top: 0;
+  left: 0;
+}
+
+.get-the-control-container1 {
+  width: 698px;
+  height: 181px;
+  display: inline-block;
+  position: absolute;
+  top: 341px;
+  left: 0;
+}
+
+.frame11 {
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  width: 698px;
+  height: 522px;
+  position: absolute;
+  top: 0;
+  left: 18px;
+  overflow: hidden;
+}
+
+.frame10 {
+  font-size: var(--font-size-45xl);
+  color: var(--color-black);
+  width: 928px;
+  height: 522px;
+  top: 7px;
+  left: -82px;
+}
+
+.desktop-21, .frame10, .frame8 {
+  position: absolute;
+  overflow: hidden;
+}
+
+.frame8 {
+  width: 942px;
+  height: 814px;
+  top: 80px;
+  left: 283px;
+}
+
+.desktop-21 {
+  background-color: var(--color-white);
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  width: 1440px;
+  height: 1024px;
+  top: calc(50% - 539px);
+  left: calc(50% - 720px);
+}
+
+.desktop-3-parent {
+  width: 1440px;
+  height: 3126px;
+  position: relative;
+}
+
+.frame-parent {
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-lato);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

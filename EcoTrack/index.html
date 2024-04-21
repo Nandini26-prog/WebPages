@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="frame-parent">
+      <div class="desktop-3-parent">
+        <div class="desktop-31" id="desktop3">
+          <img
+            class="image-1-icon"
+            alt=""
+            src="./public/image-1@2x.png"
+            data-scroll-to="image1"
+          />
+
+          <div class="abouthelp1">
+            <div class="abouthelp-item"></div>
+            <div class="help1">HELP</div>
+            <div class="buy-now-at-container1">
+              <p class="track-your-workouts">BUY NOW AT:</p>
+              <p class="track-your-workouts">Amazon</p>
+              <p class="track-your-workouts">Flipkart</p>
+            </div>
+            <div class="contact1">CONTACT</div>
+          </div>
+          <b class="push-your-limits1">PUSH YOUR LIMITS</b>
+          <div class="designed-to-create1">Designed to create a difference</div>
+          <div class="eco-friendly-green-container1">
+            <p class="eco-friendly2">ECO FRIENDLY</p>
+            <p class="eco-friendly2">&nbsp;</p>
+            <p class="green-fitness-monitoring1">
+              Green fitness monitoring, guilt-free and effective
+            </p>
+          </div>
+          <div class="active-community-join-container1">
+            <p class="eco-friendly2">ACTIVE COMMUNITY</p>
+            <p class="eco-friendly2">&nbsp;</p>
+            <p class="track-your-workouts">
+              Join the community of active people, participate in challenges,
+              and win exciting offers.
+            </p>
+          </div>
+          <div class="smarter-training-track-container1">
+            <p class="smarter-training1">SMARTER TRAINING</p>
+            <p class="track-your-workouts">&nbsp;</p>
+            <p class="track-your-workouts">
+              track your workouts and get tons of data and tips to help you run
+              better.
+            </p>
+          </div>
+          <div class="desktop-3-inner"></div>
+          <div class="line-div"></div>
+          <div class="desktop-3-child1"></div>
+        </div>
+        <div class="desktop-11">
+          <div class="frame5">
+            <div class="frame6">
+              <div class="ecotrack1">EcoTrack</div>
+              <div class="let-your-routine1">
+                Let your routine create a difference to you and the world
+              </div>
+            </div>
+            <div class="frame7">
+              <div class="frame-item"></div>
+              <div class="sign-up1">SIGN UP</div>
+            </div>
+          </div>
+          <div class="nav1">
+            <div class="buy-now">Workouts</div>
+            <div class="buy-now">Progress</div>
+            <div class="buy-now">Buy Now</div>
+            <div class="login1">Login</div>
+            <div class="nav-inner"></div>
+            <div class="nav-child1"></div>
+          </div>
+        </div>
+        <div class="desktop-21">
+          <div class="frame8">
+            <div class="frame-inner" data-scroll-to="rectangle"></div>
+            <div class="frame9">
+              <img
+                class="daniel-korpai-6hkxwrsbl-8-unsp-icon1"
+                alt=""
+                src="./public/danielkorpai6hkxwrsbl-8unsplash-1@2x.png"
+              />
+            </div>
+            <b class="learn-more" id="lEARNMOREText">
+              <p class="track-your-workouts">LEARN MORE</p>
+            </b>
+            <div class="frame10">
+              <div class="set-up-a-container1">
+                <p class="track-your-workouts">SET UP A PLAN.</p>
+                <p class="track-your-workouts">CUSTOMIZE SCHEDULE.</p>
+                <p class="track-your-workouts">KEEP A CHECK.</p>
+                <p class="track-your-workouts">&nbsp;</p>
+                <p class="track-your-workouts">&nbsp;</p>
+              </div>
+              <div class="frame11">
+                <div class="get-the-control-container1">
+                  <p class="track-your-workouts">
+                    Get the control of your life back by easily getting a
+                    customized diet plan.
+                  </p>
+                  <p class="track-your-workouts">
+                    Track your workout routine, calorie intake, sleep schedule.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var desktop3 = document.getElementById("desktop3");
+      if (desktop3) {
+        desktop3.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='image1']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var lEARNMOREText = document.getElementById("lEARNMOREText");
+      if (lEARNMOREText) {
+        lEARNMOREText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='rectangle']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
